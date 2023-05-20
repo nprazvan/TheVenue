@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import { AppBar, Toolbar, IconButton } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -8,6 +8,12 @@ import SideDrawer from "./SideDrawer";
 //AppBar = a menu lookalike from the MUI library
 
 const Header = () => {
+  const [drawerOpen, setDrawerOpen] = useState(false);
+
+  const sideDrawerHandler = () => {
+    setDrawerOpen(!drawerOpen);
+  };
+
   return (
     <AppBar
       position="fixed"
@@ -22,11 +28,14 @@ const Header = () => {
           <div className="font_righteous header_logo_venue">The venue</div>
           <div className="header_logo_title">MUSICAL EVENTS</div>
         </div>
-
-        <IconButton aria-label="Menu" color="inherit">
+        <IconButton
+          aria-label="Menu"
+          color="inherit"
+          onClick={sideDrawerHandler}
+        >
           <MenuIcon />
         </IconButton>
-        <SideDrawer />
+        <SideDrawer open={drawerOpen} onClose={sideDrawerHandler} />
       </Toolbar>
     </AppBar>
   );
