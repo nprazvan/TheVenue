@@ -1,7 +1,8 @@
 import React from "react";
 
-import { Drawer, List, ListItem } from "@material-ui/core";
-import { render } from "@testing-library/react";
+import { Drawer, List } from "@material-ui/core";
+
+import { renderItem } from "./RenderItem";
 
 const SideDrawer = (props) => {
   const links = [
@@ -9,22 +10,8 @@ const SideDrawer = (props) => {
     { where: "venueinfo", value: "Venue INFO" },
     { where: "highlights", value: "Highlights" },
     { where: "pricing", value: "Pricing" },
-    { where: "location", value: "location" },
+    { where: "location", value: "Location" },
   ];
-
-  const renderItem = (item) => {
-    return (
-      <ListItem
-        button
-        onClick={() => {
-          alert(item.where);
-        }}
-        key={item.where}
-      >
-        {item.value}
-      </ListItem>
-    );
-  };
 
   return (
     <Drawer anchor="right" open={props.open} onClose={props.onClose}>
