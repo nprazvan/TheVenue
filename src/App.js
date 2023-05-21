@@ -2,6 +2,7 @@ import React from "react";
 import "./resources/styles.css";
 
 import Header from "./components/header_footer/Header";
+import Footer from "./components/header_footer/Footer";
 
 const App = () => {
   return (
@@ -12,6 +13,8 @@ const App = () => {
       <div style={{ backgroundColor: "yellow", height: "800px" }}></div>
       <div style={{ backgroundColor: "pink", height: "800px" }}></div>
       <div style={{ backgroundColor: "orange", height: "800px" }}></div>
+
+      <Footer />
     </div>
   );
 };
