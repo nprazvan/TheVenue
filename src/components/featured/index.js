@@ -1,9 +1,6 @@
 import React from "react";
-
 import Carrousel from "./Carrousel";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import TimeUntil from "./timeUntil";
 
 export const Featured = () => {
   return (
@@ -12,6 +9,7 @@ export const Featured = () => {
       <div className="artist_name">
         <div className="wrapper">Turnstile</div>
       </div>
+      <TimeUntil />
     </div>
   );
 };
