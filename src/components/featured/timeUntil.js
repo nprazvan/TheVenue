@@ -39,11 +39,11 @@ const TimeUntil = () => {
   }, []);
 
   useEffect(() => {
-    setInterval(() => getTimeUntil("Sept, 20, 2023, 01:20:00"), 1000);
+    setInterval(() => getTimeUntil("Sept, 20, 2023, 08:00:00"), 1000);
   }, [getTimeUntil]);
 
   return (
-    <Slide left delay={1000}>
+    <Slide left delay={500} triggerOnce>
       <div className="countdown_wrapper">
         <div className="countdown_top">Event starts in</div>
         <div className="countdown_bottom">

@@ -23,11 +23,11 @@ body {
 .bck_white {
   background: #ffffff;
 }
-.bck_red {
-  background: #ff4800;
+.bck_pink {
+  background: #e67fac;
 }
-.bck_yellow {
-  background: #ffa800;
+.bck_green {
+  background: #578e5d;
 }
 
 .iconImage {
