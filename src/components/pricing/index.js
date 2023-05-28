@@ -20,7 +20,7 @@ const Pricing = () => {
             <span>{priceState.position[i]}</span>
           </div>
           <div className="pricing_description">{priceState.desc[i]}</div>
-          <div className="pricing-button">
+          <div className="pricing_buttons">
             <MyButton
               text="purchase"
               size="large"

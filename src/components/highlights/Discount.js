@@ -46,7 +46,7 @@ const Discount = () => {
             <MyButton
               text="Purchase tickets"
               link="https://www.iabilet.ro"
-              // size="small"
+              size="small"
               style={{
                 background: "#578e5d",
                 color: "#ffffff",
