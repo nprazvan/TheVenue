@@ -1,5 +1,6 @@
 import React from "react";
 import "./resources/styles.css";
+import { Element } from "react-scroll";
 
 import Header from "./components/header_footer/Header";
 import Footer from "./components/header_footer/Footer";
@@ -14,30 +15,25 @@ const App = () => {
     <div className="App">
       <Header />
 
-      <>
+      <Element name="featured">
         <Featured />
-      </>
+      </Element>
 
-      <>
+      <Element name="venueinfo">
         <VenueInfo />
-      </>
+      </Element>
 
-      <>
+      <Element name="highlights">
         <Highlights />
-      </>
+      </Element>
 
-      <>
+      <Element name="pricing">
         <Pricing />
-      </>
+      </Element>
 
-      <>
+      <Element name="location">
         <Location />
-      </>
-
-      <div style={{ backgroundColor: "gray", height: "800px" }}></div>
-      <div style={{ backgroundColor: "white", height: "800px" }}></div>
-      <div style={{ backgroundColor: "black", height: "800px" }}></div>
-      <div style={{ backgroundColor: "gray", height: "800px" }}></div>
+      </Element>
 
       <Footer />
     </div>
